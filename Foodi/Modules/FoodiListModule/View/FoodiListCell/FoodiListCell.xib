@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="FoodiListCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodiListCell" rowHeight="209" id="KGk-i7-Jjw" customClass="FoodiListCell" customModule="Foodi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Bs-PU-Ff8">
+                        <rect key="frame" x="8" y="8" width="204" height="195"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cez-HM-0AJ">
+                                <rect key="frame" x="0.0" y="8" width="204" height="179"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UcY-1V-skI">
+                                        <rect key="frame" x="0.0" y="0.0" width="204" height="162"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOR-43-bhg">
+                                        <rect key="frame" x="0.0" y="170" width="204" height="9"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14902088050000001" green="0.14901730420000001" blue="0.14901974800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cez-HM-0AJ" secondAttribute="bottom" constant="8" id="8Bg-fK-e9V"/>
+                            <constraint firstAttribute="trailing" secondItem="cez-HM-0AJ" secondAttribute="trailing" id="hKg-Uk-XLb"/>
+                            <constraint firstItem="cez-HM-0AJ" firstAttribute="leading" secondItem="8Bs-PU-Ff8" secondAttribute="leading" id="hfm-QA-830"/>
+                            <constraint firstItem="cez-HM-0AJ" firstAttribute="top" secondItem="8Bs-PU-Ff8" secondAttribute="top" constant="8" id="kre-Aa-byA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8Bs-PU-Ff8" secondAttribute="bottom" constant="8" id="A47-D5-Dh7"/>
+                    <constraint firstAttribute="trailing" secondItem="8Bs-PU-Ff8" secondAttribute="trailing" constant="8" id="ODs-ZX-duv"/>
+                    <constraint firstItem="8Bs-PU-Ff8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="c9y-Jh-Vk6"/>
+                    <constraint firstItem="8Bs-PU-Ff8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="v3h-pq-V1s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="8Bs-PU-Ff8" id="6ij-dL-QbY"/>
+                <outlet property="foodImageView" destination="UcY-1V-skI" id="xah-jT-e3W"/>
+                <outlet property="foodNameLabel" destination="FOR-43-bhg" id="qa7-z5-F10"/>
+            </connections>
+            <point key="canvasLocation" x="-184.05797101449278" y="-87.388392857142847"/>
+        </tableViewCell>
+    </objects>
+</document>

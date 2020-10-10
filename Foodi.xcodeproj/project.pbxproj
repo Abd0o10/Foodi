@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0499B4501ECEC359E5EBA81F /* Pods_Foodi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75570A800F612AD03B205527 /* Pods_Foodi.framework */; };
+		369858392530363F00420198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858382530363F00420198 /* AppDelegate.swift */; };
+		3698583B2530363F00420198 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698583A2530363F00420198 /* SceneDelegate.swift */; };
+		369858422530364000420198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369858412530364000420198 /* Assets.xcassets */; };
+		369858452530364000420198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369858432530364000420198 /* LaunchScreen.storyboard */; };
+		369858752530375500420198 /* FoodiItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858572530375500420198 /* FoodiItemViewModel.swift */; };
+		369858762530375500420198 /* FoodiItemContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858592530375500420198 /* FoodiItemContract.swift */; };
+		369858772530375500420198 /* FoodiItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698585B2530375500420198 /* FoodiItemPresenter.swift */; };
+		369858782530375500420198 /* FoodiItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3698585D2530375500420198 /* FoodiItemViewController.xib */; };
+		369858792530375500420198 /* FoodiItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698585E2530375500420198 /* FoodiItemViewController.swift */; };
+		3698587A2530375500420198 /* FoodiItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858602530375500420198 /* FoodiItemInteractor.swift */; };
+		3698587B2530375500420198 /* FoodiItemLocalizatedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858622530375500420198 /* FoodiItemLocalizatedStrings.swift */; };
+		3698587C2530375500420198 /* FoodiItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858642530375500420198 /* FoodiItemRouter.swift */; };
+		3698587D2530375500420198 /* FoodiListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858672530375500420198 /* FoodiListViewModel.swift */; };
+		3698587E2530375500420198 /* FoodiListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858692530375500420198 /* FoodiListContract.swift */; };
+		3698587F2530375500420198 /* FoodiListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698586B2530375500420198 /* FoodiListPresenter.swift */; };
+		369858802530375500420198 /* FoodiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698586D2530375500420198 /* FoodiListViewController.swift */; };
+		369858812530375500420198 /* FoodiListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3698586E2530375500420198 /* FoodiListViewController.xib */; };
+		369858822530375500420198 /* FoodiListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858702530375500420198 /* FoodiListInteractor.swift */; };
+		369858832530375500420198 /* FoodiListLocalizatedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858722530375500420198 /* FoodiListLocalizatedStrings.swift */; };
+		369858842530375500420198 /* FoodiListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858742530375500420198 /* FoodiListRouter.swift */; };
+		369858892530380500420198 /* FoodiListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369858872530380500420198 /* FoodiListCell.swift */; };
+		3698588A2530380500420198 /* FoodiListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369858882530380500420198 /* FoodiListCell.xib */; };
+		3698588D25305C9100420198 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698588C25305C9100420198 /* Recipe.swift */; };
+		36985890253089A100420198 /* RecipeNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698588F253089A100420198 /* RecipeNetworking.swift */; };
+		3698589325308CFE00420198 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698589225308CFE00420198 /* NetworkService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		369858352530363F00420198 /* Foodi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		369858382530363F00420198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3698583A2530363F00420198 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		369858412530364000420198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		369858442530364000420198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		369858462530364000420198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		369858572530375500420198 /* FoodiItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiItemViewModel.swift; sourceTree = "<group>"; };
+		369858592530375500420198 /* FoodiItemContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiItemContract.swift; sourceTree = "<group>"; };
+		3698585B2530375500420198 /* FoodiItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiItemPresenter.swift; sourceTree = "<group>"; };
+		3698585D2530375500420198 /* FoodiItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodiItemViewController.xib; sourceTree = "<group>"; };
+		3698585E2530375500420198 /* FoodiItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiItemViewController.swift; sourceTree = "<group>"; };
+		369858602530375500420198 /* FoodiItemInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiItemInteractor.swift; sourceTree = "<group>"; };
+		369858622530375500420198 /* FoodiItemLocalizatedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiItemLocalizatedStrings.swift; sourceTree = "<group>"; };
+		369858642530375500420198 /* FoodiItemRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiItemRouter.swift; sourceTree = "<group>"; };
+		369858672530375500420198 /* FoodiListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiListViewModel.swift; sourceTree = "<group>"; };
+		369858692530375500420198 /* FoodiListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiListContract.swift; sourceTree = "<group>"; };
+		3698586B2530375500420198 /* FoodiListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiListPresenter.swift; sourceTree = "<group>"; };
+		3698586D2530375500420198 /* FoodiListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiListViewController.swift; sourceTree = "<group>"; };
+		3698586E2530375500420198 /* FoodiListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodiListViewController.xib; sourceTree = "<group>"; };
+		369858702530375500420198 /* FoodiListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiListInteractor.swift; sourceTree = "<group>"; };
+		369858722530375500420198 /* FoodiListLocalizatedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiListLocalizatedStrings.swift; sourceTree = "<group>"; };
+		369858742530375500420198 /* FoodiListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodiListRouter.swift; sourceTree = "<group>"; };
+		369858872530380500420198 /* FoodiListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodiListCell.swift; sourceTree = "<group>"; };
+		369858882530380500420198 /* FoodiListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodiListCell.xib; sourceTree = "<group>"; };
+		3698588C25305C9100420198 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		3698588F253089A100420198 /* RecipeNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeNetworking.swift; sourceTree = "<group>"; };
+		3698589225308CFE00420198 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		75570A800F612AD03B205527 /* Pods_Foodi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89A541B4B8BBD161321DC6F5 /* Pods-Foodi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodi.debug.xcconfig"; path = "Target Support Files/Pods-Foodi/Pods-Foodi.debug.xcconfig"; sourceTree = "<group>"; };
+		B7CC96F2975ED18E1C347288 /* Pods-Foodi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodi.release.xcconfig"; path = "Target Support Files/Pods-Foodi/Pods-Foodi.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		369858322530363F00420198 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0499B4501ECEC359E5EBA81F /* Pods_Foodi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32E7DCE2FADDD99A913902CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89A541B4B8BBD161321DC6F5 /* Pods-Foodi.debug.xcconfig */,
+				B7CC96F2975ED18E1C347288 /* Pods-Foodi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3698582C2530363F00420198 = {
+			isa = PBXGroup;
+			children = (
+				369858372530363F00420198 /* Foodi */,
+				369858362530363F00420198 /* Products */,
+				32E7DCE2FADDD99A913902CD /* Pods */,
+				D4F8CB1DB911E976C021D44E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		369858362530363F00420198 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				369858352530363F00420198 /* Foodi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		369858372530363F00420198 /* Foodi */ = {
+			isa = PBXGroup;
+			children = (
+				3698588E2530891600420198 /* Networking */,
+				3698584E2530368E00420198 /* Modules */,
+				3698584C2530365E00420198 /* Core */,
+				369858432530364000420198 /* LaunchScreen.storyboard */,
+				369858412530364000420198 /* Assets.xcassets */,
+				369858462530364000420198 /* Info.plist */,
+			);
+			path = Foodi;
+			sourceTree = "<group>";
+		};
+		3698584C2530365E00420198 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				369858382530363F00420198 /* AppDelegate.swift */,
+				3698583A2530363F00420198 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3698584E2530368E00420198 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				369858552530375500420198 /* FoodiItemModule */,
+				369858652530375500420198 /* FoodiListModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		369858552530375500420198 /* FoodiItemModule */ = {
+			isa = PBXGroup;
+			children = (
+				369858562530375500420198 /* ViewModel */,
+				369858582530375500420198 /* Contract */,
+				3698585A2530375500420198 /* Presenter */,
+				36985885253037AA00420198 /* View */,
+				3698585F2530375500420198 /* Interactor */,
+				369858612530375500420198 /* Localization */,
+				369858632530375500420198 /* Router */,
+			);
+			path = FoodiItemModule;
+			sourceTree = "<group>";
+		};
+		369858562530375500420198 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				369858572530375500420198 /* FoodiItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		369858582530375500420198 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				369858592530375500420198 /* FoodiItemContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		3698585A2530375500420198 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3698585B2530375500420198 /* FoodiItemPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3698585C2530375500420198 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3698585D2530375500420198 /* FoodiItemViewController.xib */,
+				3698585E2530375500420198 /* FoodiItemViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3698585F2530375500420198 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				369858602530375500420198 /* FoodiItemInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		369858612530375500420198 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				369858622530375500420198 /* FoodiItemLocalizatedStrings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		369858632530375500420198 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				369858642530375500420198 /* FoodiItemRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		369858652530375500420198 /* FoodiListModule */ = {
+			isa = PBXGroup;
+			children = (
+				369858662530375500420198 /* ViewModel */,
+				369858682530375500420198 /* Contract */,
+				3698586A2530375500420198 /* Presenter */,
+				3698588B2530488200420198 /* View */,
+				3698586F2530375500420198 /* Interactor */,
+				369858712530375500420198 /* Localization */,
+				369858732530375500420198 /* Router */,
+			);
+			path = FoodiListModule;
+			sourceTree = "<group>";
+		};
+		369858662530375500420198 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				369858672530375500420198 /* FoodiListViewModel.swift */,
+				3698588C25305C9100420198 /* Recipe.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		369858682530375500420198 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				369858692530375500420198 /* FoodiListContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		3698586A2530375500420198 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3698586B2530375500420198 /* FoodiListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3698586C2530375500420198 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3698586E2530375500420198 /* FoodiListViewController.xib */,
+				3698586D2530375500420198 /* FoodiListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3698586F2530375500420198 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				369858702530375500420198 /* FoodiListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		369858712530375500420198 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				369858722530375500420198 /* FoodiListLocalizatedStrings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		369858732530375500420198 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				369858742530375500420198 /* FoodiListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		36985885253037AA00420198 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3698585C2530375500420198 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		36985886253037B900420198 /* FoodiListCell */ = {
+			isa = PBXGroup;
+			children = (
+				369858882530380500420198 /* FoodiListCell.xib */,
+				369858872530380500420198 /* FoodiListCell.swift */,
+			);
+			path = FoodiListCell;
+			sourceTree = "<group>";
+		};
+		3698588B2530488200420198 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36985886253037B900420198 /* FoodiListCell */,
+				3698586C2530375500420198 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3698588E2530891600420198 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3698588F253089A100420198 /* RecipeNetworking.swift */,
+				3698589225308CFE00420198 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D4F8CB1DB911E976C021D44E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75570A800F612AD03B205527 /* Pods_Foodi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		369858342530363F00420198 /* Foodi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 369858492530364000420198 /* Build configuration list for PBXNativeTarget "Foodi" */;
+			buildPhases = (
+				93CC08F28805BBEFD3D38C8F /* [CP] Check Pods Manifest.lock */,
+				369858312530363F00420198 /* Sources */,
+				369858322530363F00420198 /* Frameworks */,
+				369858332530363F00420198 /* Resources */,
+				6927174B64C893ED7DA58A8A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Foodi;
+			productName = Foodi;
+			productReference = 369858352530363F00420198 /* Foodi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3698582D2530363F00420198 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = 3bdo;
+				TargetAttributes = {
+					369858342530363F00420198 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 369858302530363F00420198 /* Build configuration list for PBXProject "Foodi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3698582C2530363F00420198;
+			productRefGroup = 369858362530363F00420198 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				369858342530363F00420198 /* Foodi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		369858332530363F00420198 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369858452530364000420198 /* LaunchScreen.storyboard in Resources */,
+				3698588A2530380500420198 /* FoodiListCell.xib in Resources */,
+				369858812530375500420198 /* FoodiListViewController.xib in Resources */,
+				369858422530364000420198 /* Assets.xcassets in Resources */,
+				369858782530375500420198 /* FoodiItemViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6927174B64C893ED7DA58A8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodi/Pods-Foodi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodi/Pods-Foodi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foodi/Pods-Foodi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93CC08F28805BBEFD3D38C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Foodi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		369858312530363F00420198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3698587E2530375500420198 /* FoodiListContract.swift in Sources */,
+				369858802530375500420198 /* FoodiListViewController.swift in Sources */,
+				369858772530375500420198 /* FoodiItemPresenter.swift in Sources */,
+				3698587F2530375500420198 /* FoodiListPresenter.swift in Sources */,
+				369858892530380500420198 /* FoodiListCell.swift in Sources */,
+				369858792530375500420198 /* FoodiItemViewController.swift in Sources */,
+				3698587B2530375500420198 /* FoodiItemLocalizatedStrings.swift in Sources */,
+				369858392530363F00420198 /* AppDelegate.swift in Sources */,
+				3698583B2530363F00420198 /* SceneDelegate.swift in Sources */,
+				369858762530375500420198 /* FoodiItemContract.swift in Sources */,
+				3698589325308CFE00420198 /* NetworkService.swift in Sources */,
+				369858752530375500420198 /* FoodiItemViewModel.swift in Sources */,
+				36985890253089A100420198 /* RecipeNetworking.swift in Sources */,
+				3698587A2530375500420198 /* FoodiItemInteractor.swift in Sources */,
+				369858822530375500420198 /* FoodiListInteractor.swift in Sources */,
+				369858832530375500420198 /* FoodiListLocalizatedStrings.swift in Sources */,
+				369858842530375500420198 /* FoodiListRouter.swift in Sources */,
+				3698588D25305C9100420198 /* Recipe.swift in Sources */,
+				3698587C2530375500420198 /* FoodiItemRouter.swift in Sources */,
+				3698587D2530375500420198 /* FoodiListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		369858432530364000420198 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				369858442530364000420198 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		369858472530364000420198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		369858482530364000420198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3698584A2530364000420198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A541B4B8BBD161321DC6F5 /* Pods-Foodi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RFTDZPJ23;
+				INFOPLIST_FILE = Foodi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.Foodi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3698584B2530364000420198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7CC96F2975ED18E1C347288 /* Pods-Foodi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RFTDZPJ23;
+				INFOPLIST_FILE = Foodi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.Foodi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		369858302530363F00420198 /* Build configuration list for PBXProject "Foodi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369858472530364000420198 /* Debug */,
+				369858482530364000420198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		369858492530364000420198 /* Build configuration list for PBXNativeTarget "Foodi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3698584A2530364000420198 /* Debug */,
+				3698584B2530364000420198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3698582D2530363F00420198 /* Project object */;
+}
